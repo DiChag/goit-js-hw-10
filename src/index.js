@@ -54,7 +54,7 @@ function renderCountryList(contries) {
     .map(({ flags, name }) => {
       return `
           <li class="country-list__item">
-              <img class="country-list__flag" src="${flags.svg}" alt="Flag of ${name.official}">
+              <img class="country-list__flag" src="${flags.svg}" alt="Flag of ${name.official}" width = 50px height = 50px>
               <h2 class="country-list__name">${name.official}</h2>
           </li>
           `;
@@ -66,14 +66,14 @@ function renderCountryInfo(contries) {
   return contries
     .map(({ flags, name, capital, population, languages }) => {
       return `
-      <img src='${flags.svg}' 
+      <img width="100px" height="100px" src='${flags.svg}' 
       alt='${name.official} flag' />
         <ul class="country-info__list">
             <li class="country-info__item">
-            <p>Name: ${name.official}</p></li>
-            <li class="country-info__item"><p>Capital: ${capital}</p></li>
-            <li class="country-info__item"><p>Population: ${population}</p></li>
-            <li class="country-info__item"><p>Languages: ${Object.values(
+            <p><b>Name: </b>${name.official}</p></li>
+            <li class="country-info__item"><p><b>Capital: </b>${capital}</p></li>
+            <li class="country-info__item"><p><b>Population: </b>${population}</p></li>
+            <li class="country-info__item"><p><b>Languages: </b>${Object.values(
               languages
             )}</p></li>
         </ul>

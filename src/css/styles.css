@@ -20,7 +20,7 @@ body {
 }
 
 .country-list {
-  padding: 20px;
+  padding-left: 20px;
   list-style: none;
 }
 
@@ -31,10 +31,16 @@ body {
 }
 
 .country-list__name {
-  margin: 5px;
+  padding-left: 10px;
+  margin: 0;
+}
+
+.country-info {
+  padding-left: 30px;
 }
 
 .country-info__list {
   list-style: none;
   padding: 0;
+  margin-top: 10px;
 }
