@@ -16,5 +16,25 @@ body {
   font: inherit;
   padding: 8px;
   max-width: 320px;
-  margin-bottom: 16px;
+  margin-bottom: 5px;
+}
+
+.country-list {
+  padding: 20px;
+  list-style: none;
+}
+
+.country-list__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.country-list__name {
+  margin: 5px;
+}
+
+.country-info__list {
+  list-style: none;
+  padding: 0;
 }
